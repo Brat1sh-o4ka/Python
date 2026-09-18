@@ -1,4 +1,4 @@
 import math
 x = float(input())
-result = math.floor(x) + math.ceil(x)
+z = math.floor(x) + math.ceil(x)
 print(z)
