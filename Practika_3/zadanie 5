@@ -1,0 +1,7 @@
+#создал список
+shopping_list = ["beef", "potato", "fish"]
+shopping_list.append( "beer")
+print ("shoping_list:",shopping_list)
+#uniqe_item это список с uniq_item'ом, а uniqe_item это shope_list.append
+unique_items = set(shopping_list)
+print ("shoping_list:", unique_items)
