@@ -1,0 +1,27 @@
+a=42
+b=3.14159
+c='hello, Pthon!'
+d=True
+e=[1, 2, 3]
+f=(4, 5, 6)
+g={'name': 'Alice', 'age': 30}
+h={7, 8, 9}
+i = None
+
+print("переменная a:", a, "| тип:", type(a))
+
+print("переменная b:", b, "| тип:", type(b))
+
+print("переменная c:", c, "| тип:", type(c))
+
+print("переменная d:", d, "| тип:", type(d))
+
+print("переменная e:", e, "| тип:", type(e))
+
+print("переменная f:", f, "| тип:", type(f))
+
+print("переменная g:", g, "| тип:", type(g))
+
+print("переменная h:", h, "| тип:", type(h))
+
+print("переменная i:", i, "| тип:", type(i))
