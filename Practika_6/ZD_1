@@ -1,0 +1,17 @@
+temper = float(input("Введите температуру: "))
+pressure = float(input("Введите давление: "))
+pulse = float(input("Введите пульс: "))
+
+if temper < 105 or pressure > 140 \
+    or pulse < 55 or pulse > 110:
+    diagnos = "Нужен врач"
+
+elif 36 <= temper <= 37 \
+        and 110 <= pressure <= 130 \
+        and 60 <= pulse <= 100:
+    diagnos = "Нормальное состояние"
+
+else:
+    diagnos = "Легкое недомогание"
+
+print(diagnos)
