@@ -1,0 +1,15 @@
+import math
+tax_rate = 0.13
+
+def calculate_tax(money, tax_rate):
+    tax = money * tax_rate
+    return tax
+
+money = float(input("Введите свой годовой доход: "))
+
+tax = calculate_tax(money, tax_rate)
+after_tax = money - tax
+
+print(f"Сумма денег: {money:.2f} руб.")
+print(f"Сумма налога: {tax:.2f} руб.")
+print(f"Сумма денег после вычета: {after_tax:.2f} руб.")
