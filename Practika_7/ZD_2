@@ -1,0 +1,34 @@
+import random
+
+status = input("Введите статус заказа (pending, processing, shipped, delivered, cancelled): ")
+
+match status:
+  case "pending":
+      name, emoji, stage, time = ("В ожидании", "🕐", "ждёт подтверждения оплаты", (1, 60, "мин"))
+
+  case "processing":
+      name, emoji, stage, time = ("В обработке", "🔧", "собирается на складе", (1, 4, "ч"))
+
+  case "shipped":
+      name, emoji, stage, time = ("Отправлено", "🚚", "в пути к получателю", (1, 15, "дн."))
+
+  case "delivered":
+      name, emoji, stage, time = ("Доставлено", "🎁", "получен получателем", (0, 0, ""))
+
+  case "cancelled":
+      name, emoji, stage, time = ("Отменено", "🚫", "отменён, обработка завершена", (0, 0, ""))
+
+  case _:
+      name = None
+
+if name is None:
+    print("Ошибка: неизвестный статус заказа.")
+else:
+    lo, hi, unit = time
+    wait = "готово" if hi == 0 else f"{random.randint(lo, hi)} {unit}"
+
+    print("=" * 50)
+    print(f"  Статус заказа: {name} {emoji}")
+    print(f"  Этап: {stage}")
+    print(f"  Примерное время: {wait}")
+    print("=" * 50)
