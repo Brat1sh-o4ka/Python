@@ -1,0 +1,18 @@
+import random
+s_num = random.randint(1, 200)
+attempt = 0
+print("угадай число (1-200)")
+
+while True:
+cislo = int(input("Введи число: "))
+attempt += 1
+
+  if cislo < s_num:
+    print("Загаданное число больше.")
+  elif cislo > s_num:
+    print("Загаданное число меньше.")
+      else:
+
+print(f"Угадал {s_num}.")
+print(f"Колво попыток: {attempt}")
+  break
