@@ -1,0 +1,17 @@
+count = 0
+after_alexandra = False
+
+while True:
+    name = input("Введите имя: ")
+
+    if name in ("Левон","левон"):
+        break
+
+    if name in ("Александра", "александра"):
+        after_alexandra = True
+        continue
+
+    if after_alexandra:
+        count += 1
+
+print(count)
