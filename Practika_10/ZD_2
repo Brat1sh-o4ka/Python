@@ -1,0 +1,14 @@
+num1 = int(input("Введите 1 число"))
+while True:
+    num2 = int(input("Введите 2 число"))
+    if num2 > num1:
+        break
+    else:
+        print("Введите 2 число заново")
+while True:
+    num3 = int(input("Введите 3 число"))
+    if num2 < num3:
+        print("Принято")
+        break
+    else:
+        print("Введите третье 3 заново ")
