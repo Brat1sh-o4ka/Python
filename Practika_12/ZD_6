@@ -1,0 +1,9 @@
+word = input("Введите слово: ")
+
+c_list = list(word)
+rp_list = c_list[::-1]
+
+if c_list == rp_list:
+    print(f"'{word}' — Палиндром")
+else:
+    print(f"'{word}' — Не палиндром")
