@@ -1,0 +1,11 @@
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+first_st = data[:3]
+last_st = data[-3:]
+rp_data = data[::-1]
+n_index = data[1::2]
+
+print(f"Первая тройка чисел: {first_st}")
+print(f"Последняя тройка чисел: {last_st}")
+print(f"Список в обратном порядке: {rp_data}")
+print(f"Элементы с нечётными индексами: {n_index}")
