@@ -1,0 +1,13 @@
+marks = [5, 4, 3, 5, 2, 5, 4, 3, 5, 5]
+
+count_p=0
+count_d=0
+
+for i in marks:
+    if i==5:
+        count_p+=1
+    elif i==2:
+        count_d+=1
+
+print("Колво пятерок", count_p)
+print("Колво двоек", count_d)
