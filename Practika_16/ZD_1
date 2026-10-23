@@ -1,0 +1,11 @@
+n = int(input()) #раньше было n= input()
+
+product = 1 #раньше было product = n % 10, должно быть целое значение
+
+#раньше не обрабатывалась последняя цифра, которая находится в n
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n //= 10
+
+print(product)
